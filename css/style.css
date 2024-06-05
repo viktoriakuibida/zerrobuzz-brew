@@ -161,7 +161,7 @@
   }
   
   /* Skjuler overskrifter på mindre skærme */
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1000px) {
     .navbar {
         display: none;
     }
@@ -182,7 +182,7 @@
   
   
   /* Tilpasninger til mindre skærme */
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1000px) {
     .burger-icon {
         display: block;
     }
