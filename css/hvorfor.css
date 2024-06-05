@@ -1,0 +1,51 @@
+/*tilføjer baggrundsbillede til desktop størrelse*/
+@media screen and (min-width: 1000px) {
+    .baggrund{
+        background-image: url("/img/hvorfor/baggrundsbillede.webp");
+    }
+}
+
+/*Ændrer baggrundsbillede ved mobil størrelse*/
+@media screen and (max-width: 1000px) {
+    .baggrund{
+        background-image: url("/img/hvorfor/baggrundsbillede-mobil.webp");
+    }
+}
+
+/*styling af teksten under h1*/
+.tekst{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 65%; /* Sætter en maksimal bredde på teksten */
+    margin-left: auto; /* Centrerer teksten horisontalt */
+    margin-right: auto; /* Centrerer teksten horisontalt */
+    text-align:left;
+}
+
+/*styling af tekten over ikoner*/
+.tekst-nederst{
+    font-size: 20px; 
+    text-align: center;
+    font-family: "Jaldi", sans-serif;
+    margin-top: 50px;
+}
+
+.image-container4-desktop{
+    display: flex;
+    justify-content:center; /* Horisontal centrering */
+    align-items: center; /* Vertikal centrering */
+}
+
+#instagram-ikon {
+    margin-right: 10px; 
+    margin-bottom: 150px;
+}
+
+#facebook-ikon {
+    margin-left: 10px; 
+    margin-bottom: 150px;
+}
+

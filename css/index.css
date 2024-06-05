@@ -1,0 +1,284 @@
+/*styling af billede og tekst 1 desktop størrelse*/
+ #billede1-desktop{
+    width: 100%; /*gør sådan, at billedet fylder hele skærmen fra side til side*/
+    height: auto; /*gør sådan, at billedet ikke strækkes og beholder sin originale højde*/
+}
+
+.image-container-desktop {
+    position: relative;
+    display: inline-block;
+    width: 100%; /*gør sådan, at billedet fylder hele skærmen fra side til side*/
+    height: auto; /*gør sådan, at billedet ikke strækkes og beholder sin originale højde*/
+}
+
+/*styling af tekst 1 på første billede desktop størrelse*/
+#tekst1-desktop{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: var(--hvid); 
+    font-size: 35px; 
+    text-align: center;
+    font-family: "reddit mono", sans-serif;
+    background-color: var(--light-green);
+    padding: 1vw 2vw; 
+    border-radius: 1vw; 
+    border-radius: 20px; 
+}
+
+/*styling af billede og tekst 1 til mindre skærme*/
+#billede1-mobile{
+    width: 100%; /*gør sådan, at billedet fylder hele skærmen fra side til side*/
+    height: auto; /*gør sådan, at billedet ikke strækkes og beholder sin originale højde*/
+    object-fit: cover; /*gør sådan, at billedet strækkes for at dække hele det tilgængelige område*/
+}
+
+.image-container-mobile {
+    position: relative;
+    display: inline-block;
+}
+
+#tekst1-mobile{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: var(--hvid); 
+    font-size: 20px; 
+    text-align: center;
+    font-family: "reddit mono", sans-serif;
+    background-color: var(--light-green);
+    padding: 1vw 2vw; 
+    border-radius: 1vw; 
+    border-radius: 10px; 
+}
+
+/*styling af billede og tekst 2 desktop størrelse*/
+#billede2-desktop{
+    width: 100%; /*gør sådan, at billedet fylder hele skærmen fra side til side*/
+    height: auto; /*gør sådan, at billedet ikke strækkes og beholder sin originale højde*/
+}
+
+.image-container2-desktop {
+    position: relative;
+    display: inline-block;
+    width: 100%; /*billedet fylder hele skærmen fra side til side*/
+    height: auto; /*billedet strækkes ikke og beholder sin originale højde*/
+}
+
+#tekst2-desktop{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: var(--hvid); 
+    font-size: 35px; 
+    text-align: center;
+    font-family: "reddit mono", sans-serif;
+    background-color: var(--light-green);
+    padding: 1vw 2vw; 
+    border-radius: 1vw; 
+    border-radius: 20px; 
+}
+
+/*styling af billede og tekst 2 til mindre skærme*/
+#billede2-mobile{
+    width: 100%; /*billedet fylder hele skærmen fra side til side*/
+    height: auto; /*billedet strækkes ikke og beholder sin originale højde*/
+    object-fit: cover; /*billedet strækkes for at dække hele det tilgængelige område*/
+}
+
+.image-container2-mobile {
+    position: relative;
+    display: inline-block;
+    width: 100%; /*billedet fylder hele skærmen fra side til side*/
+    height: auto; /*billedet strækkes ikke og beholder sin originale højde*/
+    object-fit: cover; /*billedet strækkes for at dække hele det tilgængelige område*/
+}
+
+#tekst2-mobile{
+    position: absolute;
+    top:63%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: var(--hvid); 
+    font-size: 20px; 
+    text-align: center;
+    font-family: "reddit mono", sans-serif;
+    background-color: var(--light-green);
+    padding: 1vw 2vw; 
+    border-radius: 1vw; 
+    border-radius: 20px; 
+}
+
+#beer{
+    position: absolute;
+    right: 0;
+}
+
+.tekst3{
+    margin-top: 58%;
+}
+
+.tekst3 p{
+    font-size: 20px; 
+    margin-left: 10%;
+    font-family: "reddit mono", sans-serif;
+}
+
+.image-container3-desktop {
+    display: flex;
+    justify-content: center; /* Horisontal centrering */
+    align-items: center; /* Vertikal centrering */
+}
+
+#billedet-af-logo{
+    width: auto;
+    height: 400px;
+}
+
+/*styling af knappen*/
+#knap{
+    background-color:var(--gul); 
+    color: var(--sort);
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/*tilføjer hover effekt til knappen*/
+#knap:hover {
+    background-color: var(--light-green); 
+    color: var(--hvid);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+    padding-bottom: 20px;
+}
+
+.tekst4{
+    font-size: 20px; 
+    text-align: center;
+    font-family: "Jaldi", sans-serif;
+    margin-top: 100px;
+}
+
+.image-container4-desktop{
+    display: flex;
+    justify-content:center; /* Horisontal centrering */
+    align-items: center; /* Vertikal centrering */
+}
+
+#instagram-ikon {
+    margin-right: 10px; 
+    margin-bottom: 80px;
+}
+
+#facebook-ikon {
+    margin-left: 10px; 
+    margin-bottom: 80px;
+}
+
+/* Skjuler "mobile" objekter på desktop størrelse */
+/* Tekst og bilede 1*/
+@media screen and (min-width: 800px) {
+    #billede1-mobile {
+        display: none;
+    }
+}
+
+ @media screen and (min-width: 800px) {
+    #tekst1-mobile {
+        display: none;
+    }
+}
+
+/* Tekst og bilede 2*/
+@media screen and (min-width: 800px) {
+    #billede2-mobile {
+        display: none;
+    }
+}
+
+ @media screen and (min-width: 800px) {
+    #tekst2-mobile {
+        display: none;
+    }
+}
+
+/* Skjuler "desktop" objekter på mobile størrelse */
+/* Tekst og bilede 1*/
+  @media screen and (max-width: 800px) {
+    #billede1-desktop {
+        display: none;
+    }
+}
+
+ @media screen and (max-width: 800px) {
+    #tekst1-desktop {
+        display: none;
+    }
+}
+
+/* Tekst og bilede 2*/
+@media screen and (max-width: 800px) {
+    #billede2-desktop {
+        display: none;
+    }
+}
+
+ @media screen and (max-width: 800px) {
+    #tekst2-desktop {
+        display: none;
+    }
+}
+
+/*Ændrer størrelse af billedet beer på mobil størrelse*/
+@media screen and (max-width: 1400px) {
+    #beer {
+        width: 60%;
+        height: auto;
+    }
+}
+
+/*Ændrer størrelsen af billedet logo på mobil størrelse*/
+@media screen and (max-width: 1000px) {
+    #billedet-af-logo {
+        width: 60%;
+        height: auto;
+    }
+}
+
+/*Ændrer størrelsen af knappen på mobil størrelse*/
+@media screen and (max-width: 1000px){
+    .button-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 60px; 
+        padding-bottom: 50px;
+        padding-top: 30px;
+       
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #knap{
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+}

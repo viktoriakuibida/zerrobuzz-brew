@@ -1,0 +1,109 @@
+/*styling af overskrifter under billder af øl*/
+h3{
+    margin-top: 30px;
+    color: var(--sort);
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+/*styling af containeren med billeder og beskrivelse af øl*/
+.billede-container-for-alle {
+    display: flex;
+    justify-content: space-around; /* Fordeler pladsen jævnt mellem elementerne */
+    align-items: flex-start; /* Justerer elementerne til toppen af containeren */
+    padding: 20px;
+    gap: 20px; /* Tilføjer mellemrum mellem elementerne */
+}
+
+.billede-container-for-alle > div {
+    flex: 1; /* Giver hver kolonne lige meget plads */
+    text-align: center; /* Centrerer tekst og billede inde i hver kolonne */
+}
+
+.billede-container-for-alle img {
+    max-width: 100%; /* Sørger for, at billederne ikke overstiger deres container */
+    height: auto; 
+}
+
+/*Styling af teksten under billeder*/
+.text-under {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 65%; 
+    margin-left: auto; /* Centrerer teksten horisontalt */
+    margin-right: auto; /* Centrerer teksten horisontalt */
+    text-align: center;
+}
+
+/*tilføjer effekten, hvor billeder forstørres når musen holdes over dem*/
+.billeder-af-oel {
+    transition: transform 0.3s; /* Tilføjer en glidende overgang til transformeringer */
+}
+
+.billeder-af-oel:hover {
+    transform: scale(1.1); /* Forstør billedet med 10% */
+}
+
+.text-under2{
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: auto; /* Centrerer teksten horisontalt */
+    margin-right: auto; /* Centrerer teksten horisontalt */
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tekst-nederst{
+    font-size: 20px; 
+    text-align: center;
+    font-family: "Jaldi", sans-serif;
+    margin-top: 100px;
+}
+
+.image-container4-desktop{
+    display: flex;
+    justify-content:center; /* Horisontal centrering */
+    align-items: center; /* Vertikal centrering */
+}
+
+#instagram-ikon {
+    margin-right: 10px; 
+    margin-bottom: 80px;
+}
+
+#facebook-ikon {
+    margin-left: 10px; 
+    margin-bottom: 80px;
+}
+
+/*Ændrer størrelsen af objekter til mobil enhed*/
+@media screen and (max-width: 1000px) {
+    .billede-container-for-alle {
+        display:list-item;
+        justify-content: space-around; /* Fordeler pladsen jævnt mellem elementerne */
+        align-items: flex-start; /* Justerer elementerne til toppen af containeren */
+        padding: 20px;
+        gap: 20px; /* Tilføjer mellemrum mellem elementerne */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .text-under {
+        margin-top: 10px;
+        margin-bottom: 60px;
+        font-size: 14px;
+        font-family: "Jaldi", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        max-width: 65%; 
+        margin-left: auto; /* Centrerer teksten horisontalt */
+        margin-right: auto; /* Centrerer teksten horisontalt */
+        text-align: center;
+    }
+}

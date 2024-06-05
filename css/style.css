@@ -1,0 +1,217 @@
+/*defineret farver til hjemmesiden*/
+:root{
+    --green:#93A80C;
+    --light-green:rgba(147, 168, 12, 0.6);
+    --gul:#ECDC6B;
+    --hvid:#FFFFFF;
+    --sort:#000000;
+    --grey:#bfbdbd;
+}
+
+/*basic til start af websiderne. For at fjerne indbygget margin osv.*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+/*styling af header*/
+.header {
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Justeret til at placere logo og overskrifter i hver sin ende */
+    align-items: center; /* Centrerer elementerne lodret */
+    padding: 0 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .logo {
+    margin-left: 30px; 
+    margin-right: 30px; 
+    margin-top: 10px; 
+    
+  }
+  
+  /*styling af navbar til desktop størrelsen*/
+  .navbar {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 60px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: var(--sort);
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+  }
+  
+  /*styling af dropdown til dektop størrelsen*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content{
+    display: none; /* Skjuler dropdown-indholdet som standard */
+    position: absolute;
+    background-color: var(--hvid);
+    color: var(--sort);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a{
+    text-decoration: none;
+    color: var(--sort);
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #dropdown-content-right {
+    margin-left: -60px;
+}
+
+/*styling af navbar til mobile størrelsen*/
+
+/*styling af burgermenu*/
+.dropdown-burgermenu {
+    display: none; /* Skjuler dropdown-indholdet som standard */
+    position:fixed;
+    background-color: var(--hvid);
+    font-family: "Jaldi", sans-serif;
+    font-weight: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    right: 15px;
+    line-height: 1.5;
+    z-index: 1;
+  }
+  
+  .dropdown-burgermenu a{
+    text-decoration: none;
+    color: var(--sort);
+    font-style: normal;
+    font-size: 20px;
+  }
+  
+  /*Tilføjer hover effekt når man trykker på den valgte overskrift*/
+  .hover-effekt:hover {
+    background-color:var(--green); 
+  }
+  
+  /* Viser/skjuler dropdown-menuen, når man trykker på burger iconen*/
+  .toggle-checkbox:checked + .burger-icon + .dropdown-burgermenu {
+    display: block;
+  }
+  
+  /* Viser dropdown-indholdet, når musen holdes over menuelementet */
+  .navbar li:hover .dropdown-content {
+    display: block; 
+  }
+  
+  /* Viser sub-dropdown menu, når musen holdes over*/
+  .submenu:hover .sub-dropdown-content {
+    display: block;
+  }
+  
+  /*Styling af sub-dropdown-content*/
+  .sub-dropdown-content {
+    display:none;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    background-color: var(--hvid);
+    color: var(--sort);
+    font-family: "Jaldi", sans-serif;
+    font-weight: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .submenu{
+    position:relative;
+  }
+  
+  
+  /* Skjuler checkbox */
+  #toggle {
+    display: none;
+  }
+  
+  /* Skjuler overskrifter på mindre skærme */
+  @media screen and (max-width: 1200px) {
+    .navbar {
+        display: none;
+    }
+  
+  /* Viser burger-ikon */
+    #toggle:checked + .navbar {
+        display: block;
+    }
+  }
+  
+  /* Styling af burger-ikon */
+  .burger-icon {
+    display: none;
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 36px;
+  }
+  
+  
+  /* Tilpasninger til mindre skærme */
+  @media screen and (max-width: 1200px) {
+    .burger-icon {
+        display: block;
+    }
+  }
+  /*Styling af alle h1*/
+  h1{
+    color: var(--sort);
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+  /*Styling af footer*/
+  footer {
+    background-color:var(--hvid);
+    padding: 20px;
+    text-align: center;
+    color: var(--sort);
+    margin-right: 0;
+    margin-left: 0;
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .overskrift{
+    font-size: 20px;
+  }

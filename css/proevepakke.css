@@ -1,0 +1,114 @@
+/*centrere billedet på siden, og tilføjer afstand omkring*/
+.billedet-af-proevepakken{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content:center; /* Horisontal centrering */
+    align-items: center; /* Vertikal centrering */
+    transition: transform 0.3s;
+}
+
+/*Tilføjer effekten, hvor billedet forstøres, når musen holdes over billedet*/
+.billedet-af-proevepakken:hover {
+    transform: scale(1.1); /* Forstør billedet med 10% */
+}
+
+/*størrelsen på billedet på desktop*/
+.billedet-af-proevepakken img {
+    width: 500px; 
+}
+
+/*ændrer størrelsen af billedet ved mindre skærme*/
+@media screen and (max-width: 1000px) {
+    .billedet-af-proevepakken img {
+        width: 300px; 
+    }
+}
+
+/*styling af teksten under billedet*/
+.beskrivelse{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 65%; 
+    margin-left: auto; /* Centrerer teksten horisontalt */
+    margin-right: auto; /* Centrerer teksten horisontalt */
+    text-align: center;
+}
+
+/*styling af knappen*/
+#knap{
+    background-color:var(--gul); 
+    color: var(--sort);
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/*tilføjer hover effekt til knappen*/
+#knap:hover {
+    background-color: var(--light-green); 
+    color: var(--hvid);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Ændret skygge */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+    padding-bottom: 20px;
+}
+
+.tekst4{
+    font-size: 20px; 
+    text-align: center;
+    font-family: "Jaldi", sans-serif;
+    margin-top: 100px;
+}
+
+.image-container4-desktop{
+    display: flex;
+    justify-content:center; /* Horisontal centrering */
+    align-items: center; /* Vertikal centrering */
+}
+
+#instagram-ikon {
+    margin-right: 10px; 
+    margin-bottom: 80px;
+}
+
+#facebook-ikon {
+    margin-left: 10px; 
+    margin-bottom: 80px;
+}
+
+/*Ændrer størrelsen af knappen på mobil størrelse*/
+@media screen and (max-width: 1000px){
+    .button-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 60px; 
+        padding-bottom: 50px;
+        padding-top: 30px;
+       
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #knap{
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+}

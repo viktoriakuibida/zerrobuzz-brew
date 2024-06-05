@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hvorfor</title>
+<!--link til favikon-->
+    <link rel="icon" type="image/x-icon" href="/img/index/logopng.webp">
+<!--link til fælles css fil-->
+    <link rel="stylesheet" href="css/style.css">
+<!--link til den spicifikke css fil for hvorfor...-->
+    <link rel="stylesheet" href="css/hvorfor.css">
+<!--link til fonten Jaldi--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaldi:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<!--link til fonten Reddit Mono-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaldi:wght@400;700&family=Poppins:wght@400;600&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+<!--link til fonten Lilita One-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaldi:wght@400;700&family=Lilita+One&family=Poppins:wght@400;600&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="header">
+<!--tilføjer logo-->
+                <a class="logo" href="index.html">
+                    <img src="/img/css/logopng.webp" alt="zerrobuzz-brew-logo" width="100">
+                </a>
+<!--burgermenu/navigationsbar til mobile størrelse-->
+                <ul>
+                    <div>
+                        <input type="checkbox" id="toggle" class="toggle-checkbox">
+                        <label for="toggle" class="burger-icon">
+                            <img src="/img/css/burger-menu.webp" alt="Menu">
+                        </label>
+                        <div class="dropdown-burgermenu">
+                            <div class="submenu">
+                                <div class="hover-effekt">   
+                                    <a href="/alkoholfri.html"><p>Alkolfri øl</p></a>
+                                </div> 
+                                <div class="hover-effekt"> 
+                                <a href="/proevepakke.html"><p>Prøvepakke</p></a>
+                                </div>
+                            </div>
+                            <div class="submenu">
+                                <div class="hover-effekt">   
+                                    <a href="#"><p>Mød os</p></a>
+                                </div> 
+                                <div class="sub-dropdown-content">
+                                    <div class="hover-effekt">  
+                                        <a href="#"><p>Festivaler 2024</p></a>
+                                    </div>
+                                    <div class="hover-effekt">  
+                                        <a href="#"><p>Fredagsbar</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submenu">
+                                <div class="hover-effekt"> 
+                                    <a href="/hvorfor.html"><p>Hvorfor alkoholfri øl</p></a>
+                                </div>
+                                <div class="sub-dropdown-content">
+                                    <div class="hover-effekt">  
+                                        <a href="#"><p>Ølanmendelser</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="submenu">
+                                <div class="hover-effekt">   
+                                     <a href="#"><p>Om os</p></a>
+                                </div> 
+                                <div class="sub-dropdown-content">
+                                    <div class="hover-effekt">  
+                                        <a href="#"><p>Vores værdier</p></a>
+                                    </div>
+                                    <div class="hover-effekt">  
+                                        <a href="#"><p>Historien bag</p></a>
+                                    </div>
+                                    <div class="hover-effekt">  
+                                        <a href="#"><p>Samarbejdspartner</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </ul>        
+<!--navigationsbar desktop størrelse-->
+<!--tilføjer overskrifter til navbar-->
+                <menu class="navbar">
+                    <li><a href="/alkoholfri.html">Alkoholfri øl</a></li>
+                    <li><a href="proevepakke.html">Prøvepakke</a></li>
+<!--tilføjer dropdownmenuer og overskrifter dertil-->
+                    <li class="dropdown">
+                        <li><a href="#">Mød os</a></li>
+                        <li class="dropdown-content">
+                            <a href="#"><p>Festivaler2024</p></a>
+                            <a href="#"><p>Fredagsbar</p></a>
+                        </li>
+                    
+                    <li class="dropdown">
+                        <li><a href="hvorfor.html">Hvorfor alkoholfri øl</a>
+                        </li>
+                        <li class="dropdown-content">
+                            <a href="#"><p>Ølanmendelser</p></a>
+                        </li>
+                    
+                    <li class="dropdown">
+                        <li><a href="#">Om os</a></li>
+<!--tilføjer et specifikt id til dropdown under "Om os", for at lave margin, så overskrifterne vil visses helt -->
+                        <li class="dropdown-content" id="dropdown-content-right">
+                            <a href="#"><p>Vores værdier</p></a>
+                            <a href="#"><p>Historien bag</p></a>
+                         <a href="#"><p>Samarbejdspartner</p></a>
+                    </li>
+                </menu>
+            </div>
+        </div>
+    </header>
+<!--tilføjer alt content under main-->
+    <main>
+        <div class="baggrund">
+<!--tilføjer overskrift h1-->
+            <h1>Ja tak til alkoholfri øl. <br>
+            Men hvorfor egentlig?</h1>
+<!--tilføjer artiklen under overeskriften-->
+            <div class="tekst">
+                <p>Ud over at vores alkoholfri øl smager himmelsk, så er der rent faktisk en masse fordele ved at foretrakke den, frem for øl med alkohol. Lad os nævne nogle af dem:<br><br>
+                <strong>1. Ingen alkoholpåvirkning:</strong> Du kan nyde øl uden at blive påvirket af alkohol.<br>
+                <strong>2. Lavere kalorieindhold:</strong> Alkoholfri øl indeholder ofte færre kalorier end almindelig øl.<br>
+                <strong>3. Sikkerhed:</strong> Du kan drikke det og stadig køre bil eller betjene maskiner uden risiko.<br>
+                <strong>4. Hydrering:</strong> Alkoholfri øl kan være mere hydrerende end alkoholholdig øl.<br>
+                <strong>5. Sundere valg:</strong> Det kan være et sundere alternativ for dem, der ønsker at reducere deres alkoholforbrug.<br>
+                <strong>6. Færre tømmermænd:</strong> Du undgår de ubehagelige tømmermænd, som kan følge med alkoholforbrug.<br>
+                <strong>7. Socialt alternativ:</strong> Perfekt til sociale sammenkomster, hvor du ønsker at være inkluderet uden at drikke alkohol.
+                </p>
+            </div>
+<!--tilføjer tekst og SoMe ikoner-->
+            <div class="tekst-nederst">
+                <p>ZerroBuzz Brew</p>
+            </div>
+            <div class="image-container4-desktop">
+                <img src="/img/index/instagram-ikon.webp" alt="Instagram ikon" id="instagram-ikon">
+                <img src="/img/index/facebook-ikon.webp" alt="Facebook ikon" id="facebook-ikon">
+            </div>
+        </div>
+    </main>
+<!--footer-->
+    <footer>
+        <div>
+            <p class="overskrift"><strong>Kontakt</strong></p>
+            <p> Huselvej 45 <br>
+                8000 Århus<br>
+                Tlf. 78 98 54 43</p>
+        </div>
+    </footer>
+</body>
